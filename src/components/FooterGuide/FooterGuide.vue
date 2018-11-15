@@ -10,7 +10,7 @@
         <span class="item_icon">
           <i class="iconfont icon-search"></i>
         </span>
-        <span>搜索 </span>
+        <span>搜索</span>
       </a>
       <a href="javascript:;" class="guide_item" :class="{on: $route.path === '/order'}" @click="goTo('/order')">
         <span class="item_icon">
