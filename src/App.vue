@@ -7,12 +7,13 @@
 
 <script>
 import FooterGuide from './components/FooterGuide/FooterGuide'
-import {reqFoodType} from "./api";
+//import {reqFoodCategorys} from "./api";
 
 export default {
   async mounted() {
-    const result = await reqFoodType()
-    console.log(result)
+    //const result = await reqFoodCategorys()
+    //console.log(result)
+    this.$store.dispatch('getAddress')
   },
   components: {
     FooterGuide
