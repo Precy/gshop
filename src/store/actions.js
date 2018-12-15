@@ -19,14 +19,14 @@ export default {
     const result = await reqAddress(geohash)
     if (result.code === 0) {
       const address = result.data
-      commit(RECEIVE_CATEGORYS, {address})
+      commit(RECEIVE_ADDRESS, {address})
     }
   },
 
   //异步获取食品分类
   async getCategorys({commit}) {
     //发送ajax请求
-    const result = await FoodCategorys()
+    const result = await reqFoodCategorys()
     if (result.code === 0) {
       const categorys = result.data
       commit(RECEIVE_CATEGORYS, {categorys})

@@ -6,19 +6,23 @@
 </template>
 
 <script>
-import FooterGuide from './components/FooterGuide/FooterGuide'
-//import {reqFoodCategorys} from "./api";
+  import {mapActions} from 'vuex'
+  import FooterGuide from './components/FooterGuide/FooterGuide'
+  export default {
+    mounted() {
+      //const result = await reqFoodCategorys()
+      //console.log(result)
 
-export default {
-  async mounted() {
-    //const result = await reqFoodCategorys()
-    //console.log(result)
-    this.$store.dispatch('getAddress')
-  },
-  components: {
-    FooterGuide
+      //this.$store.dispatch('getAddress')
+      this.getAddress()
+    },
+    methods: {
+      ...mapActions(['getAddress'])
+    },
+    components: {
+      FooterGuide
+    }
   }
-}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
