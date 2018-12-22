@@ -25,6 +25,7 @@
     top 0
     width 100%
     height 45px
+    border-bottom 1px solid transparent
     .header_search
       position absolute
       left 15px
