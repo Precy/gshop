@@ -52,7 +52,7 @@
   export default {
     data() {
       return {
-        baseImgUrl: 'http://cangdu.org:8001/img/'
+        baseImgUrl: 'http://35.221.169.163/imgs/'
       }
     },
 
