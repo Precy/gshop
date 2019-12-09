@@ -12,7 +12,7 @@ export default function ajax(url, data={}, type='GET') {
         dataStr += key + '=' +data[key] + '&'
       })
       if(dataStr !== '') {
-        //最后一个参数会多一个&，所以要去掉.
+        //最后一个参数会多一个&，所以要去掉
         dataStr = dataStr.substring(0, dataStr.lastIndexOf('&'))
         url = url + '?' + dataStr
       }
